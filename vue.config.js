@@ -38,7 +38,7 @@ module.exports = {
       }
     })
  },
-}
+
  // vue-loader 配置项
  // https://vue-loader.vuejs.org/en/options.html
  // vueLoader: {},
@@ -67,15 +67,15 @@ module.exports = {
 //  // see https://github.com/vuejs/vue-cli/tree/dev/packages/%40vue/cli-plugin-pwa
 //  pwa: {},
 //  // webpack-dev-server 相关配置
-//  devServer: {
-//   open: process.platform === 'darwin',
-//   host: '0.0.0.0',
-//   port: 8080,
-//   https: false,
-//   hotOnly: false,
-//   proxy: null, // 设置代理
-//   before: app => {}
-//  },
+ devServer: {
+  // open: process.platform === 'darwin',
+  // host: '0.0.0.0',
+  // port: 8080,
+  // https: false,
+  // hotOnly: false,
+  // proxy: null, // 设置代理
+  // before: app => {}
+ },
 //  // 第三方插件配置
 //  pluginOptions: {
 //   // ...
@@ -84,3 +84,4 @@ module.exports = {
 // ————————————————
 // 版权声明：本文为CSDN博主「Object_name」的原创文章，遵循 CC 4.0 BY-SA 版权协议，转载请附上原文出处链接及本声明。
 // 原文链接：https://blog.csdn.net/qq_21132509/article/details/84067493
+}
