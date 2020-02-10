@@ -3,8 +3,7 @@ import App from './App.vue'
 import router from './router'
 import store from './store'
 import 'styles/iconfont.css'
-import '@/mock/mock'
-import axios from 'axios'
+import '@/mock/index.js'
 //公共样式
 import 'styles/reset.css'
 //由于移动端不同屏幕，假如在一倍屏幕下面1px是1px，那在2倍屏幕下1px就会变成2px，以下文件就是为了解决这个问题
@@ -16,7 +15,6 @@ import fastClick from 'fastclick'
 fastClick.attach(document.body)
 
 Vue.config.productionTip = false
-Vue.prototype.$axios = axios
 
 new Vue({
   router,

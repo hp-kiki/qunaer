@@ -1,21 +1,28 @@
 <template>
   <div class="home">
         <myheader></myheader>
-        <swiper></swiper>
+        <banner :banner="banners"></banner>
   </div>
 </template>
 
 <script>
 import myheader from '../components/home/header.vue'
-import swiper from '../components/home/swiper.vue'
+import banner from '../components/home/swiper.vue'
 import {homedata} from '../api/home.js'
 export default {
+    data () {
+        return {
+            banners:[],
+        }
+    },
   components:{
-      myheader,swiper
+      myheader,banner
   },
 async mounted(){
      var res=await homedata() 
      console.log(res)
+     this.banners=res.data.data.swiperList
+     console.log(this.banner)
   }
 }
 </script>
