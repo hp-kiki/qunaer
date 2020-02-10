@@ -2,7 +2,7 @@
   <div class="swiper">
       <van-swipe class="my-swipe" :autoplay="3000" indicator-color="white">
     <van-swipe-item v-for="item in banner" :key="item.id">
-        <img  :src="item.imgUrl" />
+        <img  :src="item.imgUrl" class="swiperimg"/>
     </van-swipe-item>
 
 
@@ -23,5 +23,8 @@ export default {
 </script>
 
 <style lang='less' scoped>
-
+.swiperimg{
+  height: 2.5rem;
+  width: 100%;
+}
 </style>
