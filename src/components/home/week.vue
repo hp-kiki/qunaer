@@ -56,14 +56,7 @@ export default {
             margin-top:0.1rem;
         }
 
-        .checkxq {
-        background: #fc8400;
-        border-radius: .1rem;
-        color: #fff;
-        padding: 0.1rem 0.2rem;
-        width: 18%;
-        text-align: center;
-        }
+       
       }
     }
   }

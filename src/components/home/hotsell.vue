@@ -7,7 +7,7 @@
               <div class="sell-right">
                   <span>{{item.title}}</span>
                   <p>{{item.desc}}</p>
-                   <span class="checkxq">查看详情</span>
+                   <span class="checkxq">查看</span>
               </div>
           </div>
       </div>
@@ -21,6 +21,7 @@ export default {
 </script>
 
 <style lang='less' scoped>
+  @import '~styles/mixins.less';
 .hotselllist {
   .hotsell-title {
       font-size: .26rem;
@@ -46,12 +47,13 @@ export default {
           flex-direction: column;
           justify-content: space-between;
         span {
-
+          
         }
 
         p {
             font-size: .26rem;
             color: rgb(192, 192, 192);
+            .ellipsis()
         }
 
         .checkxq {

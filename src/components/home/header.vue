@@ -5,10 +5,12 @@
           <i class="iconfont icon-sousuo"></i>
           <span class="seach-tishi">输入城市/景点/游玩/主题</span>
       </div>
+      <router-link to="/city">
       <div class="xiala">
-          <span>三亚</span>
+          <span>{{this.$store.state.cityname}}</span>
           <i class="iconfont icon-jiantou-up-down"></i>
       </div>
+      </router-link>
   </div>
 </template>
 
