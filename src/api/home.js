@@ -13,3 +13,9 @@ export const citylist=()=>{
         url:'/city'
     })
 }
+
+export const detalits=()=> {
+    return axios({
+        url:'/detail'
+    })
+}

@@ -2,6 +2,7 @@
   <div class="hotselllist">
       <h4 class="hotsell-title">热销推荐</h4>
       <div class="hotsell">
+        <router-link to="/detalits">
           <div class="sell" v-for="item in hotselllist" :key="item.id">
               <img :src="item.imgUrl">
               <div class="sell-right">
@@ -10,6 +11,7 @@
                    <span class="checkxq">查看</span>
               </div>
           </div>
+          </router-link>
       </div>
   </div>
 </template>
